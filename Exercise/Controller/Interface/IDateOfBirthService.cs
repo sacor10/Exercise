@@ -1,6 +1,6 @@
 ﻿using Exercise.Model;
 
-namespace Exercise.Service.Interface;
+namespace Exercise.Controller.Interface;
 
 public interface IDateOfBirthService
 {

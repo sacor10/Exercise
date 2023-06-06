@@ -1,8 +1,8 @@
-﻿using Exercise.Model;
-using Exercise.Service;
-using Exercise.Service.Interface;
+﻿using Exercise.Controller;
+using Exercise.Controller.Interface;
+using Exercise.Model;
 
-namespace Exercise.Controller;
+namespace Exercise;
 
 public class Program
 {
