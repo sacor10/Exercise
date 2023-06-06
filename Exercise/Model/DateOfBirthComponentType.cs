@@ -19,9 +19,9 @@ namespace Exercise.Model
             return new DateOfBirthComponentType(value);
         }
 
-        public static DateOfBirthComponentType Year = new DateOfBirthComponentType("Unknown");
-        public static DateOfBirthComponentType Month = new DateOfBirthComponentType("Exam");
-        public static DateOfBirthComponentType Day = new DateOfBirthComponentType("Glasses");
+        public static DateOfBirthComponentType Year = new DateOfBirthComponentType(nameof(Year));
+        public static DateOfBirthComponentType Month = new DateOfBirthComponentType(nameof(Month));
+        public static DateOfBirthComponentType Day = new DateOfBirthComponentType(nameof(Day));
 
         public static List<DateOfBirthComponentType> AllComponents = new List<DateOfBirthComponentType> { Year, Month, Day };
     }

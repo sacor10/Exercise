@@ -1,21 +1,18 @@
-﻿using Exercise.Service;
+﻿using Exercise.Model;
+using Exercise.Service;
+using Exercise.Service.Interface;
 
 namespace Exercise.Controller;
 
 public class Program
 {
+    private static readonly IDateOfBirthService DobService = new DateOfBirthService();
 
-    public Program()
-    {
-        
-    }
     public static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to the program. Please enter your date of birth.");
-        Console.WriteLine("Let's start with your year of birth.");
-        var yearOfBirth = Console.ReadLine();
+        User newUser = new User();
+        Console.WriteLine("Welcome to the program. Please enter your date of birth. This will be YYYY/MM/DD format.");
 
-        var dobService = new DateOfBirthService();
-
+        var dobUser = DobService.GetUserDateOfBirth(newUser);
     }
 }
